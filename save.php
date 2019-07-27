@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 if ($_FILES["image"]["type"] == "image/png") {
-        $result = move_uploaded_file($_FILES["image"]["tmp_name"], "/mystorage/test.png");
+        $result = move_uploaded_file($_FILES["image"]["tmp_name"], "./images/test.png");
         if (!$result){
             die("Create the images subdirectory. Give the script permissions to write there!!!");
         }
